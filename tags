@@ -1,0 +1,33 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_EXCMD	mixed	/number, pattern, mixed, or combineV2/
+!_TAG_OUTPUT_FILESEP	slash	/slash or backslash/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PATTERN_LENGTH_LIMIT	96	/0 for no limit/
+!_TAG_PROC_CWD	/home/michael/Documents/work/side/issue-mvp/	//
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	5.9.0	/p5.9.20210905.0/
+Calculator	src/main.rs	/^impl Calculator {$/;"	c
+Calculator	src/main.rs	/^struct Calculator;$/;"	s
+EventHandler	src/main.rs	/^impl EventHandler {$/;"	c
+EventHandler	src/main.rs	/^struct EventHandler {$/;"	s
+M.run	lua/mvp.lua	/^function M.run()$/;"	f
+M.start	lua/mvp.lua	/^function M.start()$/;"	f
+Messages	src/main.rs	/^enum Messages {$/;"	g
+Messages	src/main.rs	/^impl From<String> for Messages {$/;"	c
+Run	src/main.rs	/^    Run,$/;"	e	enum:Messages
+Unknown	src/main.rs	/^    Unknown(String),$/;"	e	enum:Messages
+VTnative	plugin.vim/mvp.vim	/^command!  VTnative lua vim.api.nvim_buf_set_extmark(0,vim.g.mvp_namespace_id,1, -1, {virt_text =/;"	c
+VTneovimlib	plugin.vim/mvp.vim	/^command! VTneovimlib lua require"mvp".tell_rust_to_send_command()$/;"	c
+add	src/main.rs	/^    fn add(&self, nums: Vec<i64>) -> i64 {$/;"	P	implementation:Calculator
+calculator	src/main.rs	/^    calculator: Calculator,$/;"	m	struct:EventHandler
+from	src/main.rs	/^    fn from(event: String) -> Self {$/;"	P	implementation:Messages
+g:mvp_namespace_id	plugin.vim/mvp.vim	/^let g:mvp_namespace_id = nvim_create_namespace("mvp_namespace")$/;"	v
+main	src/main.rs	/^fn main() {$/;"	f
+multiply	src/main.rs	/^    fn multiply(&self, p: i64, q: i64) -> i64 {$/;"	P	implementation:Calculator
+new	src/main.rs	/^    fn new() -> Calculator {$/;"	P	implementation:Calculator
+new	src/main.rs	/^    fn new() -> EventHandler {$/;"	P	implementation:EventHandler
+nvim	src/main.rs	/^    nvim: Neovim,$/;"	m	struct:EventHandler
+recv	src/main.rs	/^    fn recv(&mut self) {$/;"	P	implementation:EventHandler
