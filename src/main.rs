@@ -52,15 +52,10 @@ impl EventHandler {
         for (event, values) in receiver {
             match Messages::from(event) {
                 Messages::Run => {
-                    let nums = values
-                        .iter()
-                        .map(|v| v.as_i64().unwrap())
-                        .collect::<Vec<i64>>();
-
-                    let sum = self.calculator.add(nums);
-                    self.nvim
-                        .command(&format!("echo \"Sum: {}\"", sum.to_string()))
+                    let ns = self.nvim
+                        .create_namespace("mvp")
                         .unwrap();
+                    self.nvim.command(&format("lua require \"mvp\".display_extmarks({})", ns);
                 }
 
                 // Handle anything else

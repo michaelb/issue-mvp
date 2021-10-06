@@ -15,5 +15,9 @@ function M.run()
     vim.rpcnotify(M.job_id, 'run')
 end
 
+function M.display_extmarks(namespace)
+    vim.api.nvim_buf_set_extmark(0,namespace,2,-1, {virt_text = {"extmarks created from rust call", "Comment"}}})
+end
+
 return M
 
